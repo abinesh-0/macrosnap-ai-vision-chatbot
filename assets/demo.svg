@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="960" viewBox="0 0 800 960" role="img" aria-labelledby="demoTitle demoDesc">
+  <title id="demoTitle">MacroSnap conceptual workflow</title>
+  <desc id="demoDesc">Five-step conceptual diagram: food image, AI vision analysis, food detection, calories and macros, nutrition chat. Decorative animation only.</desc>
+  <defs>
+    <linearGradient id="demoBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#0f1e2e"/>
+    </linearGradient>
+    <linearGradient id="demoEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="800" height="960" rx="24" fill="url(#demoBg)"/>
+  <rect x="1" y="1" width="798" height="958" rx="23" fill="none" stroke="#334155" stroke-opacity="0.6" stroke-width="2"/>
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="400" y="64" font-size="28" font-weight="700" fill="#f8fafc">From photo to nutrition chat</text>
+    <text x="400" y="92" font-size="14" fill="#94a3b8">Conceptual workflow. Not a screenshot. No sample AI result.</text>
+    <!-- step cards -->
+    <g font-size="20" font-weight="700">
+      <rect x="200" y="120" width="400" height="104" rx="16" fill="#0f172a" stroke="#34d399" stroke-width="2"/>
+      <text x="400" y="160" fill="#f8fafc">1 · Food Image</text>
+      <text x="400" y="188" font-size="14" font-weight="400" fill="#94a3b8">Meal photo upload (JPG / PNG)</text>
+      <rect x="200" y="272" width="400" height="104" rx="16" fill="#0f172a" stroke="#34d399" stroke-width="2"/>
+      <text x="400" y="312" fill="#f8fafc">2 · AI Vision Analysis</text>
+      <text x="400" y="340" font-size="14" font-weight="400" fill="#94a3b8">Model reviews visible meal content</text>
+      <rect x="200" y="424" width="400" height="104" rx="16" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+      <text x="400" y="464" fill="#f8fafc">3 · Food Detection</text>
+      <text x="400" y="492" font-size="14" font-weight="400" fill="#94a3b8">Visible foods and portions interpreted</text>
+      <rect x="200" y="576" width="400" height="104" rx="16" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+      <text x="400" y="616" fill="#f8fafc">4 · Calories + Macros</text>
+      <text x="400" y="644" font-size="14" font-weight="400" fill="#94a3b8">Approximate ranges, not measurements</text>
+      <rect x="200" y="728" width="400" height="104" rx="16" fill="#0f172a" stroke="#fbbf24" stroke-width="2"/>
+      <text x="400" y="768" fill="#f8fafc">5 · Nutrition Chat</text>
+      <text x="400" y="796" font-size="14" font-weight="400" fill="#94a3b8">Follow-up questions and summary</text>
+    </g>
+    <!-- connectors -->
+    <g stroke="url(#demoEdge)" stroke-width="3">
+      <line x1="400" y1="224" x2="400" y2="272"/>
+      <line x1="400" y1="376" x2="400" y2="424"/>
+      <line x1="400" y1="528" x2="400" y2="576"/>
+      <line x1="400" y1="680" x2="400" y2="728"/>
+    </g>
+    <!-- animated travelling dots -->
+    <g fill="#a7f3d0">
+      <circle cx="400" cy="224" r="6">
+        <animate attributeName="cy" values="224;272" dur="1.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="400" cy="376" r="6">
+        <animate attributeName="cy" values="376;424" dur="1.6s" begin="0.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" dur="1.6s" begin="0.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="400" cy="528" r="6" fill="#bfdbfe">
+        <animate attributeName="cy" values="528;576" dur="1.6s" begin="0.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" dur="1.6s" begin="0.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="400" cy="680" r="6" fill="#fde68a">
+        <animate attributeName="cy" values="680;728" dur="1.6s" begin="0.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" dur="1.6s" begin="0.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <!-- step highlight pulse -->
+    <g fill="none" stroke="#34d399" stroke-width="2">
+      <rect x="200" y="120" width="400" height="104" rx="16" opacity="0">
+        <animate attributeName="opacity" values="0;0.8;0" dur="8s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="200" y="272" width="400" height="104" rx="16" opacity="0">
+        <animate attributeName="opacity" values="0;0.8;0" dur="8s" begin="1.6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="200" y="424" width="400" height="104" rx="16" stroke="#60a5fa" opacity="0">
+        <animate attributeName="opacity" values="0;0.8;0" dur="8s" begin="3.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="200" y="576" width="400" height="104" rx="16" stroke="#60a5fa" opacity="0">
+        <animate attributeName="opacity" values="0;0.8;0" dur="8s" begin="4.8s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="200" y="728" width="400" height="104" rx="16" stroke="#fbbf24" opacity="0">
+        <animate attributeName="opacity" values="0;0.8;0" dur="8s" begin="6.4s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <text x="400" y="876" font-size="13" fill="#64748b">Estimates vary by portion size, ingredients, cooking method, oil, and sauces.</text>
+    <text x="400" y="900" font-size="13" fill="#64748b">Static diagram remains readable if animation is unavailable.</text>
+  </g>
+</svg>

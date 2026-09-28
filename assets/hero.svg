@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">MacroSnap hero illustration</title>
+  <desc id="heroDesc">Dark tech-style illustration connecting a food bowl, an AI vision scan, and nutrition insight cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#101b33"/>
+      <stop offset="1" stop-color="#0e2a22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="bowl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="1200" height="420" rx="24" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="420" rx="24" fill="url(#glow)"/>
+  <rect x="1" y="1" width="1198" height="418" rx="23" fill="none" stroke="#334155" stroke-opacity="0.6" stroke-width="2"/>
+  <!-- Left copy -->
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif">
+    <text x="64" y="120" font-size="64" font-weight="700" fill="#f8fafc" letter-spacing="0.5">MacroSnap</text>
+    <text x="64" y="162" font-size="22" fill="#a7f3d0">AI vision chatbot for food and nutrition analysis</text>
+    <text x="64" y="196" font-size="15" fill="#94a3b8">Upload a meal photo, identify foods, and estimate calories and macros.</text>
+    <g font-size="14" font-weight="600">
+      <rect x="64" y="224" width="168" height="38" rx="19" fill="none" stroke="#34d399" stroke-width="1.6"/>
+      <text x="148" y="248" text-anchor="middle" fill="#a7f3d0">Computer Vision</text>
+      <rect x="244" y="224" width="172" height="38" rx="19" fill="none" stroke="#60a5fa" stroke-width="1.6"/>
+      <text x="330" y="248" text-anchor="middle" fill="#bfdbfe">Calorie Estimates</text>
+      <rect x="428" y="224" width="150" height="38" rx="19" fill="none" stroke="#fbbf24" stroke-width="1.6"/>
+      <text x="503" y="248" text-anchor="middle" fill="#fde68a">Macro Insights</text>
+    </g>
+    <text x="64" y="308" font-size="14" fill="#64748b">Estimates only. Actual nutrition varies by portion, ingredients, and preparation.</text>
+    <rect x="64" y="330" width="300" height="10" rx="5" fill="#1e293b"/>
+    <rect x="64" y="330" width="300" height="10" rx="5" fill="url(#accent)"/>
+    <text x="376" y="340" font-size="13" fill="#94a3b8">image to nutrition summary</text>
+  </g>
+  <!-- Connector -->
+  <g stroke-linecap="round">
+    <line x1="640" y1="210" x2="760" y2="210" stroke="#34d399" stroke-width="3" stroke-dasharray="8 8"/>
+    <line x1="980" y1="210" x2="1090" y2="210" stroke="#60a5fa" stroke-width="3" stroke-dasharray="8 8"/>
+    <circle cx="640" cy="210" r="5" fill="#34d399"/>
+    <circle cx="1090" cy="210" r="5" fill="#60a5fa"/>
+  </g>
+  <!-- Food bowl / vision -->
+  <g>
+    <ellipse cx="810" cy="330" rx="120" ry="18" fill="#020617" opacity="0.7"/>
+    <path d="M700 250 A110 70 0 0 0 920 250 L905 250 A95 55 0 0 1 715 250 Z" fill="url(#bowl)" stroke="#475569" stroke-width="2"/>
+    <ellipse cx="810" cy="250" rx="102" ry="34" fill="#0f172a" stroke="#34d399" stroke-width="2"/>
+    <!-- stylized foods -->
+    <ellipse cx="775" cy="246" rx="30" ry="14" fill="#22c55e"/>
+    <ellipse cx="830" cy="252" rx="26" ry="12" fill="#f59e0b"/>
+    <ellipse cx="805" cy="240" rx="18" ry="10" fill="#ef4444"/>
+    <ellipse cx="855" cy="242" rx="12" ry="8" fill="#a7f3d0"/>
+    <ellipse cx="755" cy="254" rx="10" ry="7" fill="#fde68a"/>
+    <!-- scan frame -->
+    <rect x="688" y="150" width="244" height="150" rx="16" fill="none" stroke="#34d399" stroke-width="2" stroke-dasharray="14 8"/>
+    <circle cx="688" cy="150" r="6" fill="#34d399"/>
+    <circle cx="932" cy="150" r="6" fill="#34d399"/>
+    <circle cx="688" cy="300" r="6" fill="#34d399"/>
+    <circle cx="932" cy="300" r="6" fill="#34d399"/>
+    <line x1="688" y1="210" x2="932" y2="210" stroke="#34d399" stroke-width="2" opacity="0.65"/>
+    <circle cx="810" cy="210" r="10" fill="none" stroke="#f8fafc" stroke-width="2"/>
+    <circle cx="810" cy="210" r="3.5" fill="#f8fafc"/>
+  </g>
+  <!-- Insight cards -->
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">
+    <rect x="952" y="96" width="184" height="62" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <text x="966" y="120" fill="#94a3b8" font-size="12">CALORIES</text>
+    <text x="966" y="142" fill="#f8fafc" font-weight="700" font-size="18">approx. range</text>
+    <rect x="952" y="166" width="184" height="62" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <text x="966" y="190" fill="#94a3b8" font-size="12">PROTEIN · CARBS · FAT</text>
+    <text x="966" y="212" fill="#f8fafc" font-weight="700" font-size="18">macro insights</text>
+    <rect x="952" y="236" width="184" height="62" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <text x="966" y="260" fill="#94a3b8" font-size="12">NUTRITION CHAT</text>
+    <text x="966" y="282" fill="#f8fafc" font-weight="700" font-size="18">meal breakdown</text>
+  </g>
+</svg>
